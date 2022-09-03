@@ -1,15 +1,18 @@
 variable "region" {
-  description = "AWS region"
-  default     = "us-west-1"
+  description = "Azure Region"
+  default     = "westus2"
 }
 
-variable "instance_type" {
-  description = "Type of EC2 instance to provision"
-  default     = "t2.micro"
-}
+variable "hub-vnet-name" {}
+variable "hub-rg-name" {}
+variable "hub-vhub-name" {}
+variable "hub-vpn-gateway-name" {}
+variable "hub-vwan-name" {}
+variable "hub-vpn-config-name" {}
 
-variable "instance_name" {
-  description = "EC2 instance name"
-  default     = "Provisioned by Terraform"
+variable "hub-cidr" {
+  type = list(string)
 }
-
+variable "vhub-cidr" {}
+variable "hub-p2s-cidr" {}
+variable "aad-tenant" {}

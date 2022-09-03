@@ -1,0 +1,11 @@
+hub-vnet-name = "cdelong-hub"
+hub-rg-name = "cdelong-hub"
+hub-vhub-name = "cdelong-hub"
+hub-vpn-gateway-name = "cdelong-hub"
+hub-vwan-name = "cdelong-hub"
+hub-vpn-config-name = "cdelong-hub-vpn-config"
+hub-cidr = ["10.0.0.0/16"]
+vhub-cidr = "10.0.1.0/24"
+hub-p2s-cidr = "10.0.2.0/24"
+aad-tenant = "0132387f-6c81-4e5c-9969-57d8e4c6b73e"
+region = "westus2"
